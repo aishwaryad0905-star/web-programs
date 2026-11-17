@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Time Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 12px;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        .math { background-color: lightpink; }
+        .dbms { background-color: lightyellow; }
+        .java { background-color: lightgreen; }
+        .break { background-color: lightgray; }
+    </style>
+</head>
+<body>
+
+<h1 align="center">College Time Table</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>9-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+            <th>12-1</th>
+            <th>1-2</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Monday</td>
+            <td class="math">Maths</td>
+            <td class="dbms">DBMS</td>
+            <td colspan="2" class="java">Java Lab</td>
+            <td class="break">Lunch</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td class="java">Java</td>
+            <td class="math">Maths</td>
+            <td class="dbms">DBMS</td>
+            <td class="break">Break</td>
+            <td>OS</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2" class="java">Java Lab</td>
+            <td class="math">Maths</td>
+            <td class="dbms">DBMS</td>
+            <td>OS</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6">End of Time Table</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
